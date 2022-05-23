@@ -1,0 +1,71 @@
+﻿@page "{date?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+    <form method="post" asp-page="index" asp-page-handler="previous">
+        <input type="hidden" name="currentDate" value="@Model.DateModel.Date.AddDays(-7).ToString()" />
+        <input class="left" type="submit" value="<">
+    </form>
+    <form method="post" asp-page="index" asp-page-handler="next">
+        <input type="hidden" name="currentDate" value="@Model.DateModel.Date.AddDays(7).ToString()" />
+        <input class="right" type="submit" value=">">
+    </form>
+<h3>Calendar</h3>
+<div class="container">
+    <table id="monthlyCalendar">
+        <thead class="calendarDay">
+            <tr>
+                <td class="calendarDay">Mo</td>
+                <td class="calendarDay">Tu</td>
+                <td class="calendarDay">We</td>
+                <td class="calendarDay">Th</td>
+                <td class="calendarDay">Fr</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                @for (int i = 1; i <= 5; i++)
+                {
+                    <td class="calendarDate">
+                        @if (DateTime.Today == Model.DateModel.WeekStart)
+                        {
+                            <div class="today">@Model.DateModel.WeekStart.ToString("dd/MM/yy")</div>
+                        }
+                        else
+                        {
+                            <div class="day">@Model.DateModel.WeekStart.ToString("dd/MM/yy")</div>
+                        }
+
+                        @if (Model.shiftManager.Get(new ShiftFilterEmployeeDateTime(Convert.ToInt32(User.FindFirst("id").Value), Model.DateModel.Date, Time.Morning)) != null)
+                        {
+                            <div class="morning">09:00 - 12:00</div>
+                        }
+                        else
+                        {
+                            <div class="standIn"></div>
+                        }
+                        @if (Model.shiftManager.Get(new ShiftFilterEmployeeDateTime(Convert.ToInt32(User.FindFirst("id").Value), Model.DateModel.Date, Time.Afternoon)) != null)
+                        {
+                            <div class="afternoon">12:00 - 15:00</div>
+                        }
+                        else
+                        {
+                            <div class="standIn"></div>
+                        }
+                        @if (Model.shiftManager.Get(new ShiftFilterEmployeeDateTime(Convert.ToInt32(User.FindFirst("id").Value), Model.DateModel.Date, Time.Evening)) != null)
+                        {
+                            <div class="evening">15:00 - 18:00</div>
+                        }
+                        else
+                        {
+                            <div class="standIn"></div>
+                        }
+                    </td>
+
+                    Model.DateModel.AddDay();
+                }
+            </tr>
+        </tbody>
+    </table>
+</div>

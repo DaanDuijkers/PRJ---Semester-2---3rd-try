@@ -1,0 +1,135 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Fontys\\Course Based\\2e jaar\\3e keer\\PRJ\\PRJ Solo Project\\MediaBazaar\\MediaBazaarApplication\\MediaBazaarApplication\\MediaBazaarApplication.csproj": {}
+  },
+  "projects": {
+    "D:\\Fontys\\Course Based\\2e jaar\\3e keer\\PRJ\\PRJ Solo Project\\MediaBazaar\\MediaBazaarApplication\\MediaBazaarApplication\\MediaBazaarApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Fontys\\Course Based\\2e jaar\\3e keer\\PRJ\\PRJ Solo Project\\MediaBazaar\\MediaBazaarApplication\\MediaBazaarApplication\\MediaBazaarApplication.csproj",
+        "projectName": "MediaBazaarApplication",
+        "projectPath": "D:\\Fontys\\Course Based\\2e jaar\\3e keer\\PRJ\\PRJ Solo Project\\MediaBazaar\\MediaBazaarApplication\\MediaBazaarApplication\\MediaBazaarApplication.csproj",
+        "packagesPath": "C:\\Users\\Daan Duijkers\\.nuget\\packages\\",
+        "outputPath": "D:\\Fontys\\Course Based\\2e jaar\\3e keer\\PRJ\\PRJ Solo Project\\MediaBazaar\\MediaBazaarApplication\\MediaBazaarApplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Daan Duijkers\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "D:\\Fontys\\Course Based\\2e jaar\\3e keer\\PRJ\\PRJ Solo Project\\MediaBazaar\\MediaBazaarApplication\\MediaBazaarClassLibrary\\MediaBazaarClassLibrary.csproj": {
+                "projectPath": "D:\\Fontys\\Course Based\\2e jaar\\3e keer\\PRJ\\PRJ Solo Project\\MediaBazaar\\MediaBazaarApplication\\MediaBazaarClassLibrary\\MediaBazaarClassLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Fontys\\Course Based\\2e jaar\\3e keer\\PRJ\\PRJ Solo Project\\MediaBazaar\\MediaBazaarApplication\\MediaBazaarClassLibrary\\MediaBazaarClassLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Fontys\\Course Based\\2e jaar\\3e keer\\PRJ\\PRJ Solo Project\\MediaBazaar\\MediaBazaarApplication\\MediaBazaarClassLibrary\\MediaBazaarClassLibrary.csproj",
+        "projectName": "MediaBazaarClassLibrary",
+        "projectPath": "D:\\Fontys\\Course Based\\2e jaar\\3e keer\\PRJ\\PRJ Solo Project\\MediaBazaar\\MediaBazaarApplication\\MediaBazaarClassLibrary\\MediaBazaarClassLibrary.csproj",
+        "packagesPath": "C:\\Users\\Daan Duijkers\\.nuget\\packages\\",
+        "outputPath": "D:\\Fontys\\Course Based\\2e jaar\\3e keer\\PRJ\\PRJ Solo Project\\MediaBazaar\\MediaBazaarApplication\\MediaBazaarClassLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Daan Duijkers\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.27, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

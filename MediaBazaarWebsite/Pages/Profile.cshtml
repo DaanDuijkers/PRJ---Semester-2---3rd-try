@@ -1,0 +1,83 @@
+﻿@page "{employeeID?}"
+@model ProfileModel
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<div class="input-form">
+    <form method="post">
+        <div id="grid-profile">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="profile-username">
+                <div class="form-group">
+                    <label asp-for="@Model.employeeManager.Get(new EmployeeGetByID(Convert.ToInt32(User.FindFirst("id").Value))).Username"></label><br />
+                    <div class="username">@Model.employeeManager.Get(new EmployeeGetByID(Convert.ToInt32(User.FindFirst("id").Value))).Username</div>
+                </div>
+            </div>
+            <div class="profile-password">
+                <div class="form-group">
+                    <label asp-for="@Model.ProfileController.Password"></label><br />
+                    <input asp-for="@Model.ProfileController.Password" class="form-control">
+                </div>
+            </div>
+            <div class="profile-firstname">
+                <div class="form-group">
+                    <label asp-for="@Model.ProfileController.FirstName"></label><br />
+                    <input asp-for="@Model.ProfileController.FirstName" class="form-control">
+                </div>
+            </div>
+            <div class="profile-lastname">
+                <div class="form-group">
+                    <label asp-for="@Model.ProfileController.LastName"></label><br />
+                    <input asp-for="@Model.ProfileController.LastName" class="form-control">
+                </div>
+            </div>
+            <div class="profile-gender">
+                <div class="form-group">
+                    <label asp-for="@Model.ProfileController.Gender"></label><br />
+                    <select class="form-dropdown" asp-for="@Model.ProfileController.Gender" asp-items="Html.GetEnumSelectList<Gender>()">
+                    </select>
+                </div>
+            </div>
+            <div class="profile-birthdate">
+                <div class="form-group">
+                    <label asp-for="@Model.ProfileController.BirthDate"></label><br />
+                    <input asp-for="@Model.ProfileController.BirthDate" class="form-control">
+                </div>
+            </div>
+            <div class="profile-phone">
+                <div class="form-group">
+                    <label asp-for="@Model.ProfileController.Phone"></label><br />
+                    <input asp-for="@Model.ProfileController.Phone" class="form-control">
+                </div>
+            </div>
+            <div class="profile-email">
+                <div class="form-group">
+                    <label asp-for="@Model.ProfileController.Email"></label><br />
+                    <input asp-for="@Model.ProfileController.Email" class="form-control">
+                </div>
+            </div>
+            <div class="profile-postal">
+                <div class="form-group">
+                    <label asp-for="@Model.ProfileController.Postal"></label><br />
+                    <input asp-for="@Model.ProfileController.Postal" class="form-control">
+                </div>
+            </div>
+            <div class="profile-contactname">
+                <div class="form-group">
+                    <label asp-for="@Model.ProfileController.ContactName"></label><br />
+                    <input asp-for="@Model.ProfileController.ContactName" class="form-control">
+                </div>
+            </div>
+            <div class="profile-contactphone">
+                <div class="form-group">
+                    <label asp-for="@Model.ProfileController.ContactPhone"></label><br />
+                    <input asp-for="@Model.ProfileController.ContactPhone" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="post-button">Update</button>
+        </div>
+    </form>
+</div>

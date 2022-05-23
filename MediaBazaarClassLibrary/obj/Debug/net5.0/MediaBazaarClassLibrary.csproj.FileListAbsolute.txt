@@ -1,0 +1,12 @@
+D:\Fontys\Course Based\2e jaar\3e keer\PRJ\PRJ Solo Project\MediaBazaar\MediaBazaarApplication\MediaBazaarClassLibrary\bin\Debug\net5.0\MediaBazaarClassLibrary.deps.json
+D:\Fontys\Course Based\2e jaar\3e keer\PRJ\PRJ Solo Project\MediaBazaar\MediaBazaarApplication\MediaBazaarClassLibrary\bin\Debug\net5.0\MediaBazaarClassLibrary.dll
+D:\Fontys\Course Based\2e jaar\3e keer\PRJ\PRJ Solo Project\MediaBazaar\MediaBazaarApplication\MediaBazaarClassLibrary\bin\Debug\net5.0\ref\MediaBazaarClassLibrary.dll
+D:\Fontys\Course Based\2e jaar\3e keer\PRJ\PRJ Solo Project\MediaBazaar\MediaBazaarApplication\MediaBazaarClassLibrary\bin\Debug\net5.0\MediaBazaarClassLibrary.pdb
+D:\Fontys\Course Based\2e jaar\3e keer\PRJ\PRJ Solo Project\MediaBazaar\MediaBazaarApplication\MediaBazaarClassLibrary\obj\Debug\net5.0\MediaBazaarClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fontys\Course Based\2e jaar\3e keer\PRJ\PRJ Solo Project\MediaBazaar\MediaBazaarApplication\MediaBazaarClassLibrary\obj\Debug\net5.0\MediaBazaarClassLibrary.AssemblyInfoInputs.cache
+D:\Fontys\Course Based\2e jaar\3e keer\PRJ\PRJ Solo Project\MediaBazaar\MediaBazaarApplication\MediaBazaarClassLibrary\obj\Debug\net5.0\MediaBazaarClassLibrary.AssemblyInfo.cs
+D:\Fontys\Course Based\2e jaar\3e keer\PRJ\PRJ Solo Project\MediaBazaar\MediaBazaarApplication\MediaBazaarClassLibrary\obj\Debug\net5.0\MediaBazaarClassLibrary.csproj.CoreCompileInputs.cache
+D:\Fontys\Course Based\2e jaar\3e keer\PRJ\PRJ Solo Project\MediaBazaar\MediaBazaarApplication\MediaBazaarClassLibrary\obj\Debug\net5.0\MediaBazaarClassLibrary.dll
+D:\Fontys\Course Based\2e jaar\3e keer\PRJ\PRJ Solo Project\MediaBazaar\MediaBazaarApplication\MediaBazaarClassLibrary\obj\Debug\net5.0\ref\MediaBazaarClassLibrary.dll
+D:\Fontys\Course Based\2e jaar\3e keer\PRJ\PRJ Solo Project\MediaBazaar\MediaBazaarApplication\MediaBazaarClassLibrary\obj\Debug\net5.0\MediaBazaarClassLibrary.pdb
+D:\Fontys\Course Based\2e jaar\3e keer\PRJ\PRJ Solo Project\MediaBazaar\MediaBazaarApplication\MediaBazaarClassLibrary\obj\Debug\net5.0\MediaBazaarClassLibrary.csproj.AssemblyReference.cache

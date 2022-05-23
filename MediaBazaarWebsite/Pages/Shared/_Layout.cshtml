@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - MediaBazaar</title>
+        <link rel="stylesheet" href="~/css/site.css" />
+        <script src="~/js/site.js"></script>
+    </head>
+    <body>
+        <div id="grid-container">
+            <div id="primary-nav">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a asp-page="/Index">Schedule</a>
+                    <a asp-page="/Profile">Profile</a>
+                }
+            </div>
+            <div id="sub-nav">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a asp-page="/LogOut">Logout</a>
+                }
+            </div>
+            <div id="dropdown">
+                <button onclick="myFunction()" id="dropbtn">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a asp-page="/Index">Schedule</a>
+                        <a asp-page="/Profile">Profile</a>
+                        <a asp-page="/LogOut">Logout</a>
+                    }
+                </div>
+            </div>
+            <main>
+                <div id="page">
+                    @RenderBody()
+                </div>
+            </main>
+
+            <footer class="border-top footer text-muted">
+                &copy; 2021 - MediaBazaar (Employees) - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            </footer>
+        </div>
+
+        @RenderSection("Scripts", required: false)
+    </body>
+</html>
